@@ -1,0 +1,28 @@
+.button {
+  cursor: pointer;
+  color: rgb(78, 144, 250);
+
+  background-color: transparent;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 14rem;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+
+  &:hover {
+    transition: all 0.3s;
+    border-bottom: 1px solid rgb(78, 144, 250);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  &:active {
+    border: 1px solid rgb(78, 144, 250);
+  }
+}

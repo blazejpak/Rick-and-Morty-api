@@ -1,0 +1,34 @@
+.form {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  height: 8rem;
+}
+
+.input {
+  height: 4rem;
+  width: 20rem;
+
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  &::placeholder {
+    color: black;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid rgb(78, 144, 250);
+    transition: all 0.3s;
+  }
+
+  &:focus {
+    transition: all 0.5s;
+    border-bottom: 2px solid rgb(78, 144, 250);
+    width: 100%;
+  }
+}

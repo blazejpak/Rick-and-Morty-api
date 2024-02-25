@@ -1,0 +1,13 @@
+@use "./style/reset.scss";
+@use "./style/variables.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #abb2bf;
+}

@@ -1,0 +1,76 @@
+@use "../../style/variables" as variables;
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.list {
+  background-color: rgb(60, 62, 68);
+  width: 40rem;
+  height: 22rem;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+
+  &:hover {
+    scale: 1.1;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    .content h4 {
+      transition: all 0.3s;
+      color: rgb(78, 144, 250);
+    }
+  }
+}
+
+.image {
+  height: 100%;
+
+  img {
+    height: 100%;
+  }
+}
+
+.content {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  font-weight: bold;
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 2rem;
+    color: rgb(255, 152, 0);
+  }
+
+  h4 {
+    margin-top: auto;
+    color: white;
+  }
+}
+
+@media screen and (max-width: variables.$breakpoint-phone) {
+  .list {
+    flex-direction: column;
+
+    width: 28rem;
+    height: 48rem;
+  }
+  .image {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
