@@ -46,8 +46,14 @@ const DetailCharacter = () => {
   const [episodes, setEpisodes] = useState<any>([]);
   const [episodesData, setEpisodesData] = useState<Episode | undefined>();
 
-  console.log(episodesData);
-  console.log(typeof episodesData);
+  //TODO
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  }, []);
+  //
 
   useEffect(() => {
     const charId = dataCharacter?.episode.map((element) => {
